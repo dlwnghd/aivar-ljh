@@ -61,17 +61,6 @@ export const actions = {
 
     const nUser = result.data.createUser;
 
-    // // 토큰 생성
-    // const token = await createAuthJWT({
-    //   useridx: nUser.useridx,
-    //   id: nUser.userid,
-    //   email: email.toString(),
-    // });
-
-    // event.cookies.set("aivar_ljh_auth_token", token, {
-    //   path: "/",
-    // });
-
     throw redirect(301, "/");
   },
 };

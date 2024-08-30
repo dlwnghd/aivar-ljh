@@ -6,6 +6,7 @@ type JWTPayload = {
   useridx: number;
   userid: string;
   useremail: string;
+  username: string;
 };
 
 export const createAuthJWT = async (data: JWTPayload) => {
