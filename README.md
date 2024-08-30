@@ -1,38 +1,11 @@
-# create-svelte
+[참고자료]
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+- [Figma](https://www.figma.com/design/uIMH5k8d7IWKL69psEaWBU/%EC%97%90%EC%9D%B4%EC%95%84%EC%9D%B4%EB%B0%94-%7C-%EC%9D%B4%EC%A3%BC%ED%99%8D?node-id=0-1&t=TpLlb0TfiathyUDD-1), [ERD](https://www.erdcloud.com/d/ESNQdFuX48tEhhmHi), [Notion](https://www.notion.so/2-5a245a990cfe4fb99af8476b412848b7)
 
-## Creating a project
+[구현 예시]
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 회원가입
+![](https://velog.velcdn.com/images/dlwnghd/post/565928dd-831f-4959-afaf-ad16752308ed/image.gif)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- 로그인
+![](https://velog.velcdn.com/images/dlwnghd/post/24f02374-edf1-4185-92e1-15aa3831e9f5/image.gif)
