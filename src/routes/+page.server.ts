@@ -1,0 +1,27 @@
+import { usersTable } from '$lib/db/schema.js';
+import { db } from '$lib/server/db.js';
+import { verifyAuthJWT } from '$lib/server/jwt.js';
+import { redirect } from '@sveltejs/kit';
+
+export const load = async ({ cookies, fetch }) => {
+  // fetch the current user list from the server
+
+  // 로그인 확인
+  const token = cookies.get("aivar_ljh_auth_token");
+  if (!token) {
+    throw redirect(301, "/sign-in");
+  }
+
+  const userPayload = await verifyAuthJWT(token);
+
+  const userList = await db
+    .select({
+      useridx: usersTable.useridx,
+      userid: usersTable.userid,
+      useremail: usersTable.useremail,
+      username: usersTable.username,
+      jointypeidx: usersTable.jointypeidx,
+    })
+    .from(usersTable);
+  return { userList };
+};
